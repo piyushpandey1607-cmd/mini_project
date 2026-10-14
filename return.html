@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns & Replacements</title>
+    <link rel="stylesheet" href="return.css">
+</head>
+<body>
+
+```
+<!-- Header -->
+<header class="navbar">
+    <div class="logo"><span>amazon</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Orders</a>
+        <a href="#">Customer Service</a>
+    </nav>
+
+    <div class="profile">My Account</div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <div>
+            <p class="eyebrow">CUSTOMER SUPPORT</p>
+            <h1>Returns & Replacements</h1>
+            <p class="subtitle">
+                Not satisfied with your purchase? We're here to help.
+            </p>
+        </div>
+
+        <div class="heading-icon">↩</div>
+    </section>
+
+    <!-- Help Banner -->
+    <section class="help-banner">
+        <div class="help-icon">💡</div>
+
+        <div>
+            <h3>Need to return an item?</h3>
+            <p>
+                Find your order, check its return eligibility,
+                and choose the option that works best for you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Options -->
+    <section class="section">
+        <h2>How can we help you?</h2>
+
+        <div class="option-grid">
+
+            <div class="option-card return-card">
+                <div class="card-icon">📦</div>
+                <h3>Return an Item</h3>
+                <p>
+                    Send an eligible product back and get your
+                    money refunded.
+                </p>
+                <a href="#return-form" class="card-link">
+                    Start a Return →
+                </a>
+            </div>
+
+            <div class="option-card replace-card">
+                <div class="card-icon">🔄</div>
+                <h3>Replace an Item</h3>
+                <p>
+                    Received a damaged or defective product?
+                    Request a replacement.
+                </p>
+                <a href="#return-form" class="card-link">
+                    Replace an Item →
+                </a>
+            </div>
+
+            <div class="option-card refund-card">
+                <div class="card-icon">💳</div>
+                <h3>Track Your Refund</h3>
+                <p>
+                    Check the progress of your refund
+                    and know what happens next.
+                </p>
+                <a href="#refund-info" class="card-link">
+                    Refund Information →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Return Form -->
+    <section class="section form-section" id="return-form">
+
+        <div class="form-heading">
+            <div>
+                <h2>Start a Return or Replacement</h2>
+                <p>Enter your order details to get started.</p>
+            </div>
+            <span class="form-badge">Easy Process</span>
+        </div>
+
+        <form action="#" method="get">
+
+            <div class="form-group">
+                <label for="order-id">Order ID</label>
+                <input
+                    type="text"
+                    id="order-id"
+                    name="order-id"
+                    placeholder="e.g. ORD123456"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input
+                    type="text"
+                    id="product-name"
+                    name="product-name"
+                    placeholder="Enter the product name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="request-type">Choose an option</label>
+                <select id="request-type" name="request-type" required>
+                    <option value="" disabled selected>
+                        Select return or replacement
+                    </option>
+                    <option value="return">Return & Refund</option>
+                    <option value="replacement">Product Replacement</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason for Request</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>
+                        Select a reason
+                    </option>
+                    <option value="damaged">Product arrived damaged</option>
+                    <option value="defective">Product is defective</option>
+                    <option value="wrong-item">Wrong item received</option>
+                    <option value="different">Product differs from description</option>
+                    <option value="other">Other reason</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Continue →
+            </button>
+
+            <p class="form-note">
+                Return eligibility and refund options depend on
+                the product and the applicable return policy.
+            </p>
+
+        </form>
+    </section>
+
+    <!-- Refund Information -->
+    <section class="section refund-section" id="refund-info">
+        <h2>How does the process work?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Submit Request</h3>
+                <p>Select your item and explain the issue.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Pickup or Return</h3>
+                <p>Follow the return instructions provided.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Refund or Replace</h3>
+                <p>Receive your refund or eligible replacement.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>How long do I have to return a product?</summary>
+            <p>
+                The return window varies by product. Check the
+                applicable return policy for your order.
+            </p>
+        </details>
+
+        <details>
+            <summary>When will I receive my refund?</summary>
+            <p>
+                Refund processing time depends on the return status
+                and your original payment method.
+            </p>
+        </details>
+
+        <details>
+            <summary>Can I replace a damaged product?</summary>
+            <p>
+                Replacement may be available depending on the
+                product, stock, and applicable policy.
+            </p>
+        </details>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-logo"><span>amazon</span></div>
+    <p>Making online shopping easier, every day.</p>
+    <p class="copyright">© 2026 amazon.in. All rights reserved.</p>
+</footer>
+```
+
+</body>
+</html>

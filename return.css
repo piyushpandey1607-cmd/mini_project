@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f3f5f8;
+color: #202b3c;
+line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+background-color: #131921;
+color: white;
+min-height: 76px;
+padding: 15px 6%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.logo,
+.footer-logo {
+font-size: 27px;
+font-weight: 800;
+letter-spacing: -1px;
+}
+
+.logo span,
+.footer-logo span {
+color: #ffb627;
+}
+
+.navbar nav {
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
+}
+
+.navbar nav a {
+font-size: 14px;
+color: #e5e7eb;
+transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+color: #ffb627;
+}
+
+.profile {
+background-color: #273444;
+border: 1px solid #4b5563;
+padding: 9px 16px;
+border-radius: 6px;
+font-size: 13px;
+}
+
+/* ---------- Main Container ---------- */
+
+.container {
+max-width: 1150px;
+margin: 0 auto;
+padding: 40px 24px 70px;
+}
+
+/* ---------- Page Heading ---------- */
+
+.page-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+.eyebrow {
+color: #e89a00;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2px;
+margin-bottom: 8px;
+}
+
+.page-heading h1 {
+font-size: clamp(28px, 4vw, 40px);
+line-height: 1.2;
+margin-bottom: 12px;
+letter-spacing: -1px;
+}
+
+.subtitle {
+color: #697586;
+font-size: 15px;
+}
+
+.heading-icon {
+width: 75px;
+height: 75px;
+border-radius: 20px;
+background: #fff0cf;
+color: #d98b00;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 42px;
+flex-shrink: 0;
+}
+
+/* ---------- Help Banner ---------- */
+
+.help-banner {
+display: flex;
+align-items: center;
+gap: 18px;
+padding: 23px 26px;
+margin-bottom: 42px;
+background: linear-gradient(110deg, #fff8e8, #fffdf7);
+border: 1px solid #f6dca2;
+border-left: 5px solid #ffb627;
+border-radius: 12px;
+}
+
+.help-icon {
+width: 48px;
+height: 48px;
+flex-shrink: 0;
+background: #ffedc2;
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+}
+
+.help-banner h3 {
+font-size: 17px;
+margin-bottom: 4px;
+}
+
+.help-banner p {
+font-size: 14px;
+color: #697586;
+}
+
+/* ---------- Common Section ---------- */
+
+.section {
+margin-bottom: 44px;
+}
+
+.section > h2,
+.form-heading h2 {
+font-size: 24px;
+margin-bottom: 20px;
+letter-spacing: -0.5px;
+}
+
+/* ---------- Option Cards ---------- */
+
+.option-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+}
+
+.option-card {
+padding: 26px 23px;
+background-color: white;
+border: 1px solid #e5e9f0;
+border-radius: 14px;
+transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.option-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 30px rgba(24, 39, 75, 0.08);
+}
+
+.card-icon {
+width: 55px;
+height: 55px;
+border-radius: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 27px;
+margin-bottom: 20px;
+}
+
+.return-card .card-icon {
+background: #e6f1ff;
+}
+
+.replace-card .card-icon {
+background: #e5f8ee;
+}
+
+.refund-card .card-icon {
+background: #f1e9ff;
+}
+
+.option-card h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.option-card p {
+color: #697586;
+font-size: 14px;
+min-height: 68px;
+margin-bottom: 20px;
+}
+
+.card-link {
+display: inline-block;
+color: #1765bd;
+font-size: 14px;
+font-weight: 700;
+}
+
+.card-link:hover {
+color: #e89a00;
+}
+
+/* ---------- Form Section ---------- */
+
+.form-section {
+background: white;
+padding: 30px;
+border-radius: 16px;
+border: 1px solid #e5e9f0;
+box-shadow: 0 5px 20px rgba(24, 39, 75, 0.03);
+}
+
+.form-heading {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 15px;
+margin-bottom: 25px;
+}
+
+.form-heading h2 {
+margin-bottom: 5px;
+}
+
+.form-heading p {
+color: #697586;
+font-size: 14px;
+}
+
+.form-badge {
+white-space: nowrap;
+background: #e5f8ee;
+color: #16834a;
+padding: 7px 12px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 700;
+}
+
+form {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.form-group label {
+font-size: 14px;
+font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+width: 100%;
+min-height: 48px;
+padding: 12px 14px;
+font-size: 14px;
+font-family: inherit;
+color: #202b3c;
+background-color: #fff;
+border: 1px solid #d8dee8;
+border-radius: 7px;
+outline: none;
+transition: border-color 0.2s ease  box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+border-color: #f3a712;
+box-shadow: 0 0 0 3px rgba(243, 167, 18, 0.14);
+}
+
+.form-group input::placeholder {
+color: #9aa3b2;
+}
+
+.submit-btn {
+grid-column: 1 / -1;
+width: 100%;
+min-height: 48px;
+background: linear-gradient(90deg, #ffca55, #ffb627);
+color: #202b3c;
+border: none;
+border-radius: 7px;
+font-size: 15px;
+font-weight: 800;
+font-family: inherit;
+cursor: pointer;
+transition: background 0.2s ease transform 0.2s ease;
+
+}
+
+.submit-btn:hover {
+background: #f5aa14;
+}
+
+.submit-btn:active {
+transform: scale(0.99);
+}
+
+.form-note {
+grid-column: 1 / -1;
+margin-top: -12px;
+color: #8791a1;
+font-size: 12px;
+text-align: center;
+}
+
+/* ---------- Process Steps ---------- */
+
+.refund-section {
+padding: 30px;
+background: #eaf3ff;
+border-radius: 16px;
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+
+.step {
+background: white;
+padding: 22px;
+border-radius: 12px;
+border: 1px solid #dce8f8;
+}
+
+.step-number {
+width: 38px;
+height: 38px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background: #1765bd;
+color: white;
+font-size: 16px;
+font-weight: 800;
+margin-bottom: 15px;
+}
+
+.step h3 {
+font-size: 16px;
+margin-bottom: 8px;
+}
+
+.step p {
+font-size: 13px;
+color: #697586;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-section h2 {
+margin-bottom: 20px;
+}
+
+.faq-section details {
+background: white;
+border: 1px solid #e5e9f0;
+border-radius: 9px;
+padding: 18px 20px;
+margin-bottom: 12px;
+}
+
+.faq-section summary {
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.faq-section details p {
+margin-top: 12px;
+color: #697586;
+font-size: 14px;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+background: #131921;
+color: white;
+text-align: center;
+padding: 35px 20px;
+}
+
+.footer-logo {
+font-size: 25px;
+margin-bottom: 8px;
+}
+
+.footer > p {
+color: #bdc5d1;
+font-size: 13px;
+}
+
+.footer .copyright {
+margin-top: 20px;
+padding-top: 18px;
+border-top: 1px solid #303947;
+color: #8994a4;
+font-size: 12px;
+}
